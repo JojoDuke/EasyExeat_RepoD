@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8865E575-0CB7-4DD4-8F50-DAA70EF329C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>New_EZexeat</RootNamespace>
+    <AssemblyName>New_EZexeat</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\Logo\ezex_256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8D456A61E4D421A31F54F7E379775FCA8F1FB94B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>New_EZexeat_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DPFPCtlXTypeLibNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c0c98f712d5392a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPCtlXTypeLibNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPCtlXWrapperNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c0c98f712d5392a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPCtlXWrapperNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPDevNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPDevNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPEngNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=7fe76e7adf19964b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPEngNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPGuiNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPShrNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPShrXTypeLibNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c0c98f712d5392a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPShrXTypeLibNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPVerNET.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="JerryZGY.WPF.Animation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.WPF.Animation.1.0.2\lib\net40-client\JerryZGY.WPF.Animation.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.3\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.5.1.1345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.5.1\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WizardBase">
+      <HintPath>..\..\..\..\EnrollmentCSSPS\EnrollmentCSSPS\EnrollmentCSSPS\bin\Debug\WizardBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Admin_Homepage.xaml.cs">
+      <DependentUpon>Admin_Homepage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Animation\AnimationSlideInDirection.cs" />
+    <Compile Include="Animation\FrameworkElementAnimations.cs" />
+    <Compile Include="Animation\PageAnimation.cs" />
+    <Compile Include="Animation\PageAnimations.cs" />
+    <Compile Include="Animation\StoryboardHelpers.cs" />
+    <Compile Include="AttachedProperties\BaseAttachedProperty.cs" />
+    <Compile Include="Connect.cs" />
+    <Compile Include="Controls\EditTextUC.xaml.cs">
+      <DependentUpon>EditTextUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Replies.xaml.cs">
+      <DependentUpon>Replies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SchoolDetails.xaml.cs">
+      <DependentUpon>SchoolDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Custom MessageBoxes\AddUserDetails.xaml.cs">
+      <DependentUpon>AddUserDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Custom MessageBoxes\CustomMsgBox2.xaml.cs">
+      <DependentUpon>CustomMsgBox2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Custom MessageBoxes\LoginSuccessfulMsgBox.xaml.cs">
+      <DependentUpon>LoginSuccessfulMsgBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Custom MessageBoxes\LogoutVerification.xaml.cs">
+      <DependentUpon>LogoutVerification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Custom MessageBoxes\RegistrationComplete.xaml.cs">
+      <DependentUpon>RegistrationComplete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dim.xaml.cs">
+      <DependentUpon>Dim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Custom MessageBoxes\CustomMsgBox1.xaml.cs">
+      <DependentUpon>CustomMsgBox1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExeatSlip.xaml.cs">
+      <DependentUpon>ExeatSlip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FingerprintCode\FingerData.cs" />
+    <Compile Include="FingerprintCode\StaticFarm.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NewFingerPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFingerPrint.Designer.cs">
+      <DependentUpon>NewFingerPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CheckMessagesPage.xaml.cs">
+      <DependentUpon>CheckMessagesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HelpWindow.xaml.cs">
+      <DependentUpon>HelpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Housemaster Window.xaml.cs">
+      <DependentUpon>Housemaster Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SchoolSelect.xaml.cs">
+      <DependentUpon>SchoolSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StudentsDB.xaml.cs">
+      <DependentUpon>StudentsDB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TakeExeatPage.xaml.cs">
+      <DependentUpon>TakeExeatPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UHP.xaml.cs">
+      <DependentUpon>UHP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScanFingerPrint.xaml.cs">
+      <DependentUpon>ScanFingerPrint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="tblSignUp.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User_Homepage.xaml.cs">
+      <DependentUpon>User_Homepage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Value Converters\ApplicationPageValueConverter.cs" />
+    <Compile Include="Value Converters\BaseValueConverter.cs" />
+    <Compile Include="Value Converters\BooleanInvertConverter.cs" />
+    <Compile Include="Value Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="AttachedProperties\BorderAttachedProperties.cs" />
+    <Compile Include="AttachedProperties\ButtonAttachedProperty.cs" />
+    <Compile Include="AttachedProperties\PanelChildMarginProperty.cs" />
+    <Compile Include="AttachedProperties\PasswordBoxAttachedProperties.cs" />
+    <Compile Include="AttachedProperties\ScrollViewerAttachedProperties.cs" />
+    <Compile Include="AttachedProperties\TextAttachedProperties.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="SignInAdmin.xaml.cs">
+      <DependentUpon>SignInAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp_Admin.xaml.cs">
+      <DependentUpon>SignUp_Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.xaml.cs">
+      <DependentUpon>SplashScreen.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Admin_Homepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EditTextUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Replies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SchoolDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Custom MessageBoxes\AddUserDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Custom MessageBoxes\CustomMsgBox2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Custom MessageBoxes\LoginSuccessfulMsgBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Custom MessageBoxes\LogoutVerification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Custom MessageBoxes\RegistrationComplete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dim.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExeatSlip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataModels\ApplicationPage.cs" />
+    <Page Include="Custom MessageBoxes\CustomMsgBox1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\CheckMessagesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HelpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Housemaster Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SchoolSelect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StudentsDB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TakeExeatPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UHP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScanFingerPrint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SplashScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sign In_User.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sign Up_UserPart1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignInAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUp_Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User_Homepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sign In_User.xaml.cs">
+      <DependentUpon>Sign In_User.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sign Up_UserPart1.xaml.cs">
+      <DependentUpon>Sign Up_UserPart1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFingerPrint.resx">
+      <DependentUpon>NewFingerPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\Elogo x16.png" />
+    <Resource Include="Images\Logo\Elogo x256.png" />
+    <Resource Include="Images\Logo\Elogo x64.png" />
+    <Resource Include="Images\Logo\favicon.ico" />
+    <Resource Include="Images\Logo\point-small.png" />
+    <Resource Include="Images\Logo\point.ico" />
+    <Resource Include="Images\Logo\point.png" />
+    <Resource Include="Images\Logo\point_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\1616.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\6464.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\abii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\wow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\ksld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Backgrounds\emoji-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\abi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\dsd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.11.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\resourse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\resourse2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI Designs\Create a new account.jpg" />
+    <Resource Include="UI Designs\Main Concept.jpg" />
+    <Resource Include="UI Designs\MainWindowUser.png" />
+    <Resource Include="UI Designs\Sign in.jpg" />
+    <Resource Include="UI Designs\Take an Exeat.png" />
+    <Resource Include="UI Designs\Welcome to easy exeat.jpg" />
+    <Resource Include="UI Designs\WelcomeAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resourse2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconfinder_ic_settings_48px_352095.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\leave1.ico" />
+    <Resource Include="Images\Others\leave1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\door2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\door1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\Button Icons\home_blu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\ex_grey.png" />
+    <Resource Include="Images\Others\hme.png" />
+    <Resource Include="Images\Others\hme_grey.png" />
+    <Resource Include="Images\Others\msg_grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\logonew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\blnkpic_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\blnkpic_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\blnkpic_wht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\Button Icons\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\Button Icons\ex_blu.png" />
+    <Resource Include="Images\Others\Button Icons\ex_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Others\Button Icons\msgs_blu.png" />
+    <Resource Include="Images\Others\Button Icons\msgs_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ToggleButtons\ask1.png" />
+    <Resource Include="ToggleButtons\ask2.png" />
+    <Resource Include="ToggleButtons\home1.png" />
+    <Resource Include="ToggleButtons\home2.png" />
+    <Resource Include="ToggleButtons\qstn1.png" />
+    <Resource Include="ToggleButtons\qstn2.png" />
+    <Resource Include="ToggleButtons\student1.png" />
+    <Resource Include="ToggleButtons\student2.png" />
+    <Resource Include="ToggleButtons\teacher1.png" />
+    <Resource Include="ToggleButtons\teacher2.png" />
+    <Resource Include="Images\ExeatLogoV2.png" />
+    <Resource Include="Images\ExeatLogo.png" />
+    <Resource Include="Images\ExeatLogo2.png" />
+    <Resource Include="Images\ExeatLogo3.png" />
+    <Resource Include="Images\Logo\ezex_128.ico" />
+    <Resource Include="Images\Logo\ezex_256.ico" />
+    <Resource Include="Images\Logo\ezex_32.ico" />
+    <Resource Include="Images\Logo\ezex_64.ico" />
+    <Resource Include="Images\2.jpg" />
+    <Resource Include="Images\owasslogo2.png" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="New_EZexeat.Dim"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:New_EZexeat"
+        mc:Ignorable="d"
+        Opacity="0.3" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
+        Title="Dim" Height="560" Width="960" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <Grid Background="Black" Width="944" Margin="0 32.04 0 8">
+        
+    </Grid>
+    
+</Window>

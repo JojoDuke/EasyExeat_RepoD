@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="New_EZexeat.Pages.SchoolSelect"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:New_EZexeat.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="560" d:DesignWidth="960" Background="{x:Null}">
+
+    <Grid>
+        <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=FadeIn,Duration=0:0:0.3}">
+            <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=ExpandIn,Duration=0:0:0.4}">
+                <Border Width="900" Height="420" CornerRadius="30" Background="White" Margin="0 80 0 0">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="10" Direction="288" Opacity="0.295" BlurRadius="15"/>
+                    </Border.Effect>
+                    <Grid>
+                        <!--CONTENTS-->
+
+                        <!--Select School-->
+                        <Grid Width="190" Height="400" HorizontalAlignment="Left" Margin="10 0 0 0">
+                            <Border Background="#E6E6E6" CornerRadius="20">
+                                <Grid>
+                                    <StackPanel Margin="0 40 0 0">
+                                        <ToggleButton x:Name="owass" Click="Owass_Click" Content="Opoku-Ware School" FontSize="16"  FocusVisualStyle="{x:Null}" Style="{StaticResource SelectaSchool}" Margin="0 0 0 10"/>
+                                        <ToggleButton x:Name="schoolA" Click="SchoolA_Click" Content="School A" FontSize="16"  FocusVisualStyle="{x:Null}" Style="{StaticResource SelectaSchool}" Margin="0 0 0 10"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+
+                            <!--Header, Plus and Minus buttons-->
+                            <Border Background="#B3B3B3" Height="30" CornerRadius="20 20 0 0" Margin="0 0 0 370">
+                                <Grid>
+                                    <TextBlock TextAlignment="Left" Text="Select School" FontSize="16" FontWeight="Bold" Margin="10 5 0 0"/>
+                                    <Button x:Name="addSchool" Click="AddSchool_Click" Content="+" FontWeight="Bold" FontSize="25" Style="{StaticResource PlusButton}" FocusVisualStyle="{x:Null}" Margin="113,-4,42,4"/>
+                                    <Button x:Name="deleteSchool" Content="-" FontWeight="Bold" FontSize="25" Style="{StaticResource MinusButton}" FocusVisualStyle="{x:Null}" Margin="149,-4,6,4"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+
+                        <!--Right Side-->
+                        <Grid HorizontalAlignment="Right" Margin="0 0 10 0">
+                            <Border Background="#E6E6E6" Width="670" Height="400" CornerRadius="20">
+                                <Grid x:Name="detailsGrid">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" Foreground="#808080" FontSize="20" FontWeight="SemiBold">
+                                        <Run Text="No school has been selected"/><LineBreak/>
+                                        <Run Text="Select a school or click '+' to add one"/>
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </materialDesign:TransitioningContent>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

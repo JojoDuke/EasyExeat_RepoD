@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="New_EZexeat.Pages.Housemaster_Window"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:New_EZexeat.Pages"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="560" d:DesignWidth="960">
+    
+    <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=FadeIn,Duration=0:0:0.3}">
+        <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=ExpandIn,Duration=0:0:0.4}">
+            <Grid>
+                <Border Width="900" Height="420" CornerRadius="30" Background="White" Margin="0 80 0 0">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="10" Direction="288" Opacity="0.295" BlurRadius="15"/>
+                    </Border.Effect>
+
+                    <Grid>
+                        <TextBlock Foreground="Orange" TextAlignment="Center" FontSize="30" FontWeight="DemiBold" VerticalAlignment="Center">
+                            <Run Text="Work In Progress..."/><LineBreak/>
+                            <Run Text="Coming Soon!"/>
+                        </TextBlock>
+                    </Grid>
+                </Border>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </materialDesign:TransitioningContent>
+</UserControl>

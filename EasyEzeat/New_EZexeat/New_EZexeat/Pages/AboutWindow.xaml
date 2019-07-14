@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="New_EZexeat.Pages.AboutWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:New_EZexeat.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="560" d:DesignWidth="960" Background="{x:Null}">
+    
+    <Grid>
+        <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=FadeIn,Duration=0:0:0.3}">
+            <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=ExpandIn,Duration=0:0:0.3}">
+                <Border Width="800" Height="350" CornerRadius="30" Background="White" Margin="0 80 0 0">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="10" Direction="288" Opacity="0.295" BlurRadius="15"/>
+                    </Border.Effect>
+
+                    <!--Contents-->
+                    <Grid>
+                        <StackPanel>
+                            <Image Source="/Images/2.jpg" Height="200" Width="200" Margin="0 0 0 10"/>
+                            <TextBlock Text="Bhyte Softwares Easy Exeat 2019 ©.Version 1.0 All rights reserved"
+                                       FontSize="22"
+                                       TextAlignment="Center"
+                                       FontWeight="Medium"
+                                       VerticalAlignment="Center"
+                                       Foreground="#FFFD8B2D"/>
+
+                            <TextBlock FontSize="18"
+                                       FontWeight="Medium"
+                                       TextAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Foreground="#FFFD8B2D">
+                                <Run Text="This software works with a schools database system to administrate the in coming and outgoing"/><LineBreak/>
+                                <Run Text="of students in the school. Easy Exeat has been tested by a board of elite programmers."/><LineBreak/>
+                                <Run Text="With approval from the Ghana Education Service (GES)"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </materialDesign:TransitioningContent>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="New_EZexeat.Controls.SchoolDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:New_EZexeat.Controls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=SlideInFromRight,Duration=0:0:0.2}">
+        <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=FadeIn,Duration=0:0:0.5}">
+            <Grid Margin="0 5 0 0">
+                <!--Pic and Slogan-->
+                <StackPanel HorizontalAlignment="Left" Margin="0 0 0 0" Width="230">
+                    <Ellipse Fill="#606060" Height="150" Width="150"/>
+                    <TextBox x:Name="slogan" 
+                         TextWrapping="Wrap" 
+                         IsKeyboardFocusedChanged="Slogan_IsKeyboardFocusedChanged" 
+                         Text="School Slogan/Motto" 
+                         Style="{StaticResource coolioTextBox2nd}"
+                         AcceptsReturn="True"
+                         TextAlignment="Center"/>
+                </StackPanel>
+
+                <!--School Details-->
+                <StackPanel HorizontalAlignment="Right" Margin="0,0,50,0" Width="352">
+                    <TextBlock Text="School Name" FontSize="14" FontWeight="Bold" Foreground="#666666"/>
+                    <TextBox x:Name="schoolName" Text="" Style="{StaticResource coolioTextBox}" Margin="0 0 0 20" IsEnabled="False" FontSize="21" FontWeight="SemiBold"/>
+
+                    <TextBlock Text="School Mobile Number" FontSize="14" FontWeight="Bold" Foreground="#666666"/>
+                    <TextBox x:Name="schoolMobile" Text="" Style="{StaticResource coolioTextBox}"  Margin="0 0 0 20" IsEnabled="False" FontSize="21" FontWeight="SemiBold"/>
+
+                    <TextBlock Text="P.O.Box/Location" FontSize="14" FontWeight="Bold" Foreground="#666666"/>
+                    <TextBox x:Name="poBox" Text="" Style="{StaticResource coolioTextBox}"  Margin="0 0 0 20" IsEnabled="False" FontSize="21" FontWeight="SemiBold"/>
+
+                    <TextBlock Text="Email Address" FontSize="14" FontWeight="Bold" Foreground="#666666"/>
+                    <TextBox x:Name="Email" Text="" Style="{StaticResource coolioTextBox}"  Margin="0 0 0 20" IsEnabled="False" FontSize="21" FontWeight="SemiBold"/>
+
+                    <TextBlock Text="Website" FontSize="14" FontWeight="Bold" Foreground="#666666"/>
+                    <TextBox x:Name="webSite" Text="" Style="{StaticResource coolioTextBox}"  Margin="0 0 0 20" IsEnabled="False" FontSize="21" FontWeight="SemiBold"/>
+
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20 0 0">
+                        <Button x:Name="selectButton" FocusVisualStyle="{x:Null}" Content="SELECT" Style="{StaticResource SelectButton}" FontSize="19" FontWeight="SemiBold" Margin="0 0 230 0"/>
+                        <Button x:Name="editButton" FocusVisualStyle="{x:Null}" Click="EditButton_Click" Content="EDIT" Style="{StaticResource EdittButton}" FontSize="19" FontWeight="SemiBold"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </materialDesign:TransitioningContent>
+</UserControl>

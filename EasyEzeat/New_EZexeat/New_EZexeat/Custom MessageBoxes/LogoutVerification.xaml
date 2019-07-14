@@ -1,0 +1,67 @@
+﻿<Window x:Class="New_EZexeat.Custom_MessageBoxes.LogoutVerification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:New_EZexeat.Custom_MessageBoxes"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent"
+        Title="LogoutVerification" Height="250" Width="350">
+
+    <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=ExpandIn,Duration=0:0:0.3}">
+        <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect Kind=FadeIn,Duration=0:0:0.4}">
+            <Grid x:Name="gridd" Background="Transparent">
+
+                <Border  Background="Transparent" BorderBrush="Transparent" BorderThickness="15" CornerRadius="20">
+                    <Border.Effect>
+                        <DropShadowEffect Direction="-436" ShadowDepth="2" Opacity="0.3" BlurRadius="25" Color="#FF6E6E6E" RenderingBias="Performance"/>
+                    </Border.Effect>
+                    <Border Background="Transparent" CornerRadius="20" BorderBrush="Transparent" BorderThickness="0">
+                        <Border Background="White" CornerRadius="20" BorderBrush="Transparent">
+                            <Grid>
+                                <Image Source="/Images/Others/door1.png" 
+                               Margin="24,-27,20,57"/>
+
+                                <TextBlock Text="Are you sure you want to log out?"
+                                   TextAlignment="Center"
+                                   FontFamily="Segeo UI"
+                                   FontWeight="SemiBold"
+                                   Foreground="#FFA8A8A8"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Margin="0,121,0,81"/>
+
+                                <Border BorderBrush="#FFEAEAEA"
+                                BorderThickness="100"
+                                Height="2"
+                                Width="300"
+                                Margin="0 90 0 0"/>
+
+                                <Button Content="NO"
+                                x:Name="noLogoutBtn"
+                                Style="{StaticResource OutlinedOrangeButtonTemplate}"
+                                FontWeight="SemiBold"
+                                FontSize="20"
+                                Margin="10,168,170,8"
+                                FocusVisualStyle="{x:Null}"
+                                IsCancel="True"/>
+
+                                <Button Content="YES"
+                                x:Name="yesLogoutBtn"
+                                Style="{StaticResource OrangeButtonTemplate}"
+                                FontWeight="SemiBold"
+                                FontSize="20"
+                                Margin="170,168,10,7"
+                                FocusVisualStyle="{x:Null}"
+                                BorderBrush="{x:Null}"
+                                IsDefault="True"
+                                Click="YesLogoutBtn_Click"/>
+                            </Grid>
+                        </Border>
+                    </Border>
+                </Border>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </materialDesign:TransitioningContent>
+</Window>

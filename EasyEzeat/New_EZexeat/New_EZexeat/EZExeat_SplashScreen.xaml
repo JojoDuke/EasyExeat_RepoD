@@ -1,0 +1,49 @@
+﻿<Window x:Class="New_EZexeat.EZExeat_SplashScreen"
+        ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:New_EZexeat"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+      Title="EZExeat_SplashScreen">
+
+    <Grid Background="#FF8E8FF9">
+        <!--Logo-->
+        <Image Source="Images/Logo/6464.ico" Margin="199,15,209,189">
+            <Image.Effect>
+                <DropShadowEffect Opacity="0.6" ShadowDepth="8" BlurRadius="11"/>
+            </Image.Effect>
+        </Image>
+
+        <!-- Easy Exeat Text -->
+        <TextBlock Text="Easy Exeat 2019"
+                   Foreground="#cccccc"
+                   FontWeight="SemiBold"
+                   FontSize="56"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Margin="104,118,104,108"/>
+
+        <TextBlock Text="Bhyte Softwares"
+                   Foreground="#cccccc"
+                   FontWeight="Regular"
+                   FontSize="29"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" 
+                   Margin="198,195,198,67"/>
+
+        <TextBlock Text="Beta Version 1.9"
+                   Foreground="#cccccc"
+                   FontWeight="Regular"
+                   FontSize="15"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" 
+                   Margin="0,0,493,280"/>
+
+        <!-- White Line Border -->
+        <Grid Width="520"
+              Height="2"
+              Background="#cccccc" Margin="40,194,40,104"/>
+    </Grid>
+</Window>
