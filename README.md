@@ -1,4 +1,4 @@
-# !Update 3.1!
+# !Update 3.5!
 Welcome to the Easy Exeat Repository<br>
 So far its been 7 months since we started development and we've made some major progress. The program is currently in its Alpha-Testing Stage and should be open for minor user beta testing by Alpha V4. Things are running smoothly<br>
 
