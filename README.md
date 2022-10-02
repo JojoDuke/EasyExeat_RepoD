@@ -2,7 +2,7 @@
 Welcome to the Easy Exeat Repository<br>
 So far its been 7 months since we started development and we've made some major progress. The program is currently in its Alpha-Testing Stage and should be open for minor user beta testing by Alpha v4. Things are running smoothly<br>
 
-Here is a log of progress:<br>
+Here's a log of progress:<br>
 ### 3-7-19
 Minor Changes to the design<br>
 Implemetation of SQL Database<br>
